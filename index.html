@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-blue-600 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-2xl shadow-xl w-80 text-center">
+        <input type="text" placeholder="Enter city..." class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" id="cityInput">
+        <button class="mt-3 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600" onclick="getWeather()">Get Weather</button>
+        
+        <div class="mt-5" id="weatherInfo">
+            <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" class="mx-auto w-16" id="weatherIcon">
+            <h2 class="text-2xl font-bold" id="temperature"></h2>
+            <p class="text-gray-600" id="description">Sunny</p>
+            <p class="text-sm text-gray-500" id="cityName">New York, USA</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
